@@ -70,17 +70,45 @@ body {
     align-items: center;
     border-radius: 50%;
     overflow: hidden;
+    
 }
 
 .profile-photo img {
     height: 8rem;
+    
 }
 
 .instagram-login {
-    background-color: #0095f6;
-    color: #ffffff;
+    margin-top: 10px;
+   background-color: #0899fa;
+    color: rgb(255, 255, 255);
     padding: 8px;
-    border-radius: 4px;
+    border-radius: 5px;
+    transition:  all 0.3s;
+    transition-delay: 0.1s;
+    position: relative;
+    overflow: hidden;
+}
+
+.instagram-login:after {
+  background: #fff;
+  content: "";
+  height: 155px;
+  left: -85px;
+  opacity:.4;
+  position: absolute;
+  top: -60px;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+  -webkit-transition: all 850ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 850ms cubic-bezier(0.19, 1, 0.22, 1);
+  width: 70px;
+  z-index:1;
+}
+.instagram-login:hover:after {
+  left: 130%;
+  -webkit-transition: all 850ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 850ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .instagram-logout {
